@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ashley Icamen Portfolio</title>
-<meta name="description" content="Ashley Icamen is a senior technical writer and content designer in Melbourne with 17+ years creating developer documentation, content strategy and UX writing.">
+<meta name="description" content="Ashley Icamen is a senior technical writer and content designer in Melbourne with 17+ years creating developer documentation, content strategy, and UX writing.">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="Ashley Icamen, Senior Technical Writer and Content Designer">
-<meta property="og:description" content="Developer documentation, content strategy and UX writing that help people accomplish their goals.">
+<meta property="og:description" content="Developer documentation, content strategy, and UX writing that help people accomplish their goals.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ashley-icamen.github.io/">
 <link rel="canonical" href="https://ashley-icamen.github.io/">
@@ -135,8 +135,8 @@ section.block { padding-block: clamp(56px, 8vw, 96px); }
 @media (max-width: 680px) { .evidence { grid-template-columns: minmax(0, 1fr); } }
 .shot { margin: 0; display: grid; gap: 10px; min-width: 0; }
 .frame { position: relative; border: 1px solid var(--rule); border-radius: 4px; overflow: visible; background: var(--surface); }
-.frame img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; object-position: top; border-radius: 3px; }
-.devhub .frame img { aspect-ratio: 15 / 8; object-fit: contain; object-position: center; background: #fff; }
+.frame img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; object-position: center; background: var(--fill, var(--surface)); border-radius: 3px; }
+.devhub .frame img { aspect-ratio: 15 / 8; }
 .shot figcaption { font-size: var(--s-sm); }
 .shot figcaption a { text-decoration: none; }
 .shot figcaption a::after { content: " ↗"; font-family: var(--f-mono); font-size: .85em; }
@@ -234,7 +234,7 @@ footer .wrap { padding-block: 20px; display: flex; justify-content: space-betwee
     <div class="wrap">
       <p class="label">Senior Technical Writer / Senior Content Designer · Melbourne</p>
       <h1>Crafting clarity for every audience</h1>
-      <p class="lede">I create documentation and content experiences that help people accomplish their goals, whether they're developers, admins, end users or customers.</p>
+      <p class="lede">I create documentation and content experiences that help people accomplish their goals, whether they're developers, admins, end users, or customers.</p>
       <div class="stats" role="list">
         <div class="stat" role="listitem"><b>17+</b><span>years helping audiences succeed through clear content</span></div>
         <div class="stat" role="listitem"><b>24×</b><span>faster documentation PR reviews with AI agents</span></div>
@@ -257,7 +257,7 @@ footer .wrap { padding-block: 20px; display: flex; justify-content: space-betwee
           <div class="case-body">
             <p class="label">Documentation automation &amp; tooling</p>
             <div class="case-title"><h3>AI agents for Forge documentation</h3></div>
-            <p class="desc">Built three AI agents using Cursor AI to accelerate documentation workflows for Atlassian's Forge platform: a changelog reviewer, a documentation PR reviewer and a documentation feedback reviewer. Configured MCP server settings to connect the agents to Atlassian Rovo MCP (internal Confluence specs and requirements), Forge Knowledge MCP (platform technical details) and Atlassian's developer documentation style guide. Turned a two-week manual process involving engineers, PMs and stakeholders into an automated system that lives in the docs repository and reviews against content standards on its own.</p>
+            <p class="desc">Built three AI agents using Cursor AI to accelerate documentation workflows for Atlassian's Forge platform: a changelog reviewer, a documentation PR reviewer, and a documentation feedback reviewer. Configured MCP server settings to connect the agents to Atlassian Rovo MCP (internal Confluence specs and requirements), Forge Knowledge MCP (platform technical details), and Atlassian's developer documentation style guide. Turned a two-week manual process involving engineers, PMs, and stakeholders into an automated system that lives in the docs repository and reviews against content standards on its own.</p>
             <div class="impact">
               <p class="label">Impact</p>
               <strong>24× faster PR reviews</strong>
@@ -270,7 +270,7 @@ footer .wrap { padding-block: 20px; display: flex; justify-content: space-betwee
           <div class="evidence mock">
             <div class="panel" aria-label="Review flow">
               <h4>Review flow</h4>
-              <div class="flow-step"><small>Input</small>Docs, PR or feedback</div>
+              <div class="flow-step"><small>Input</small>Docs, PR, or feedback</div>
               <div class="down" aria-hidden="true">↓</div>
               <div class="flow-step agents"><small>AI agents</small>
                 <ul><li>Doc reviewer</li><li>Changelog validator</li><li>Style checker</li></ul>
@@ -314,10 +314,10 @@ footer .wrap { padding-block: 20px; display: flex; justify-content: space-betwee
             </ul>
           </div>
           <div class="evidence">
-            <figure class="shot"><div class="frame"><img src="images/rovo-claude.webp" width="759" height="692" loading="lazy" alt="Atlassian Rovo connector page in Claude, with description, tool list and links to documentation and support."><span class="hot" aria-hidden="true"></span></div><figcaption><a href="https://code.claude.com/docs/en/mcp" target="_blank" rel="noopener">Claude docs</a></figcaption></figure>
-            <figure class="shot"><div class="frame"><img src="images/rovo-chatgpt.webp" width="851" height="824" loading="lazy" alt="Atlassian Rovo app listing in ChatGPT, explaining how to work with Jira, Confluence and Compass from a conversation."><span class="hot" aria-hidden="true"></span></div><figcaption><a href="https://help.openai.com/en/articles/11487775-apps-in-chatgpt" target="_blank" rel="noopener">ChatGPT docs</a></figcaption></figure>
-            <figure class="shot"><div class="frame"><img src="images/rovo-user-docs.webp" width="768" height="630" loading="lazy" alt="User documentation page titled Use Atlassian Rovo MCP Server, with a security disclaimer and a getting started link."><span class="hot" aria-hidden="true"></span></div><figcaption><a href="https://support.atlassian.com/atlassian-ai-gateway/docs/use-atlassian-rovo-mcp-server/" target="_blank" rel="noopener">User docs</a></figcaption></figure>
-            <figure class="shot"><div class="frame"><img src="images/rovo-admin-docs.webp" width="766" height="509" loading="lazy" alt="Admin documentation page titled Understand Atlassian Rovo MCP server, explaining Atlassian-supported domains and how to authorize them."><span class="hot" aria-hidden="true"></span></div><figcaption><a href="https://support.atlassian.com/security-and-access-policies/docs/understand-atlassian-rovo-mcp-server/" target="_blank" rel="noopener">Admin docs</a></figcaption></figure>
+            <figure class="shot"><div class="frame" style="--fill:#1d1d1c"><img src="images/rovo-claude.webp" width="759" height="692" loading="lazy" alt="Atlassian Rovo connector page in Claude, with description, tool list, and links to documentation and support."><span class="hot" aria-hidden="true"></span></div><figcaption><a href="https://code.claude.com/docs/en/mcp" target="_blank" rel="noopener">Claude docs</a></figcaption></figure>
+            <figure class="shot"><div class="frame" style="--fill:#1e1e1e"><img src="images/rovo-chatgpt.webp" width="851" height="824" loading="lazy" alt="Atlassian Rovo app listing in ChatGPT, explaining how to work with Jira, Confluence, and Compass from a conversation."><span class="hot" aria-hidden="true"></span></div><figcaption><a href="https://help.openai.com/en/articles/11487775-apps-in-chatgpt" target="_blank" rel="noopener">ChatGPT docs</a></figcaption></figure>
+            <figure class="shot"><div class="frame" style="--fill:#ffffff"><img src="images/rovo-user-docs.webp" width="768" height="630" loading="lazy" alt="User documentation page titled Use Atlassian Rovo MCP Server, with a security disclaimer and a getting started link."><span class="hot" aria-hidden="true"></span></div><figcaption><a href="https://support.atlassian.com/atlassian-ai-gateway/docs/use-atlassian-rovo-mcp-server/" target="_blank" rel="noopener">User docs</a></figcaption></figure>
+            <figure class="shot"><div class="frame" style="--fill:#ffffff"><img src="images/rovo-admin-docs.webp" width="766" height="509" loading="lazy" alt="Admin documentation page titled Understand Atlassian Rovo MCP server, explaining Atlassian-supported domains and how to authorize them."><span class="hot" aria-hidden="true"></span></div><figcaption><a href="https://support.atlassian.com/security-and-access-policies/docs/understand-atlassian-rovo-mcp-server/" target="_blank" rel="noopener">Admin docs</a></figcaption></figure>
           </div>
         </article>
 
@@ -325,7 +325,7 @@ footer .wrap { padding-block: 20px; display: flex; justify-content: space-betwee
           <div class="case-body">
             <p class="label">Multi-audience content strategy</p>
             <div class="case-title"><h3>Runs on Atlassian program</h3><a href="https://developer.atlassian.com/platform/marketplace/runs-on-atlassian/" target="_blank" rel="noopener">View docs ↗</a></div>
-            <p class="desc">Created the end-to-end content strategy and execution for a program that helps enterprise customers identify cloud apps meeting strict data privacy requirements. Delivered documentation for developers, partners, app customers and admins, plus strategic copy across the Forge CLI, Marketplace UI, app install flows and admin controls, tailoring content to each audience's needs and context.</p>
+            <p class="desc">Created the end-to-end content strategy and execution for a program that helps enterprise customers identify cloud apps meeting strict data privacy requirements. Delivered documentation for developers, partners, app customers, and admins, plus strategic copy across the Forge CLI, Marketplace UI, app install flows, and admin controls, tailoring content to each audience's needs and context.</p>
             <div class="impact">
               <p class="label">Impact</p>
               <strong>635 apps onboarded on day one</strong>
@@ -337,9 +337,9 @@ footer .wrap { padding-block: 20px; display: flex; justify-content: space-betwee
           </div>
           <div class="evidence">
             <figure class="shot"><div class="frame"><img src="images/roa-cli.webp" width="900" height="529" loading="lazy" alt="Terminal output of forge deploy, ending with a message that the app is eligible for Runs on Atlassian and a prompt to run forge eligibility check."><span class="hot" aria-hidden="true"></span></div><figcaption><a href="https://developer.atlassian.com/platform/forge/cli-reference/eligibility/" target="_blank" rel="noopener">CLI eligibility command docs</a></figcaption></figure>
-            <figure class="shot"><div class="frame"><img src="images/roa-app-install.webp" width="1600" height="1067" loading="lazy" alt="Review and install screen for a Jira app, listing the permissions and data the app can access."><span class="hot" aria-hidden="true"></span></div><figcaption><a href="https://support.atlassian.com/organization-administration/docs/installing-and-managing-app-access/" target="_blank" rel="noopener">App installation docs</a></figcaption></figure>
-            <figure class="shot"><div class="frame"><img src="images/roa-sample-app.webp" width="1600" height="893" loading="lazy" alt="Atlassian Marketplace listing for a sample app, with a Runs on Atlassian badge and a tooltip explaining what it means."><span class="hot" aria-hidden="true"></span></div><figcaption><a href="https://marketplace.atlassian.com/apps/1224710/jxl-sheets-hierarchy-structure-sum-up-time-in-status-table?hosting=cloud&amp;tab=overview" target="_blank" rel="noopener">Sample eligible app</a></figcaption></figure>
-            <figure class="shot"><div class="frame"><img src="images/roa-docs.webp" width="856" height="511" loading="lazy" alt="Runs on Atlassian documentation page listing the three customer requirements and the eligibility rules."><span class="hot" aria-hidden="true"></span></div><figcaption><a href="https://developer.atlassian.com/platform/marketplace/runs-on-atlassian/" target="_blank" rel="noopener">Runs on Atlassian docs</a></figcaption></figure>
+            <figure class="shot"><div class="frame" style="--fill:#1f1f21"><img src="images/roa-app-install.webp" width="1600" height="1067" loading="lazy" alt="Review and install screen for a Jira app, listing the permissions and data the app can access."><span class="hot" aria-hidden="true"></span></div><figcaption><a href="https://support.atlassian.com/organization-administration/docs/installing-and-managing-app-access/" target="_blank" rel="noopener">App installation docs</a></figcaption></figure>
+            <figure class="shot"><div class="frame" style="--fill:#f9f9f9"><img src="images/roa-sample-app.webp" width="1600" height="893" loading="lazy" alt="Atlassian Marketplace listing for a sample app, with a Runs on Atlassian badge and a tooltip explaining what it means."><span class="hot" aria-hidden="true"></span></div><figcaption><a href="https://marketplace.atlassian.com/apps/1224710/jxl-sheets-hierarchy-structure-sum-up-time-in-status-table?hosting=cloud&amp;tab=overview" target="_blank" rel="noopener">Sample eligible app</a></figcaption></figure>
+            <figure class="shot"><div class="frame" style="--fill:#ffffff"><img src="images/roa-docs.webp" width="856" height="511" loading="lazy" alt="Runs on Atlassian documentation page listing the three customer requirements and the eligibility rules."><span class="hot" aria-hidden="true"></span></div><figcaption><a href="https://developer.atlassian.com/platform/marketplace/runs-on-atlassian/" target="_blank" rel="noopener">Runs on Atlassian docs</a></figcaption></figure>
           </div>
         </article>
 
@@ -347,7 +347,7 @@ footer .wrap { padding-block: 20px; display: flex; justify-content: space-betwee
           <div class="case-body">
             <p class="label">Content strategy &amp; information architecture</p>
             <div class="case-title"><h3>Developer Hub refresh</h3><a href="https://developer.atlassian.com/" target="_blank" rel="noopener">View site ↗</a></div>
-            <p class="desc">Led content strategy to refresh the homepage of Atlassian's developer documentation and make the cloud development platform easier to discover. Ran user research to surface the top use cases (data integrations, data discoverability and workflow automations), restructured the information architecture to clarify the two ways to build (Forge and Studio), and added case studies and AI capability sections to inspire and guide partners and builders.</p>
+            <p class="desc">Led content strategy to refresh the homepage of Atlassian's developer documentation and make the cloud development platform easier to discover. Ran user research to surface the top use cases (data integrations, data discoverability, and workflow automations), restructured the information architecture to clarify the two ways to build (Forge and Studio), and added case studies and AI capability sections to inspire and guide partners and builders.</p>
             <div class="impact">
               <p class="label">Impact</p>
               <strong>Clearer platform discoverability</strong>
@@ -358,12 +358,12 @@ footer .wrap { padding-block: 20px; display: flex; justify-content: space-betwee
             </ul>
           </div>
           <div class="evidence">
-            <figure class="shot"><div class="frame"><img src="images/devhub-hero.webp" width="1434" height="426" loading="lazy" alt="Developer Hub hero: Built for Developers, go from idea to innovation with Atlassian's AI-powered developer platform."><span class="hot" aria-hidden="true"></span></div><figcaption>Homepage hero</figcaption></figure>
-            <figure class="shot"><div class="frame"><img src="images/devhub-discover.webp" width="1440" height="932" loading="lazy" alt="Discover what you can build section, showing a carousel of use cases starting with integrating data."><span class="hot" aria-hidden="true"></span></div><figcaption>Use cases from user research</figcaption></figure>
-            <figure class="shot"><div class="frame"><img src="images/devhub-build.webp" width="1440" height="1083" loading="lazy" alt="Build it your way section introducing Forge, with links to the Forge CLI, UI Kit and tutorials."><span class="hot" aria-hidden="true"></span></div><figcaption>Building with Forge</figcaption></figure>
-            <figure class="shot"><div class="frame"><img src="images/devhub-studio.webp" width="1440" height="518" loading="lazy" alt="Create with Studio section, describing building apps and agents from natural language without code."><span class="hot" aria-hidden="true"></span></div><figcaption>Building with Studio</figcaption></figure>
-            <figure class="shot"><div class="frame"><img src="images/devhub-ai-tools.webp" width="1440" height="438" loading="lazy" alt="AI-powered developer tools section featuring Rovo Agents, Rovo Dev CLI and Atlassian MCP Server."><span class="hot" aria-hidden="true"></span></div><figcaption>AI capabilities</figcaption></figure>
-            <figure class="shot"><div class="frame"><img src="images/devhub-makers.webp" width="1440" height="755" loading="lazy" alt="Meet the makers section with a developer case study quote about building an enterprise-grade Forge app."><span class="hot" aria-hidden="true"></span></div><figcaption>Developer case studies</figcaption></figure>
+            <figure class="shot"><div class="frame" style="--fill:#ffffff"><img src="images/devhub-hero.webp" width="1434" height="426" loading="lazy" alt="Developer Hub hero: Built for Developers, go from idea to innovation with Atlassian's AI-powered developer platform."><span class="hot" aria-hidden="true"></span></div><figcaption>Homepage hero</figcaption></figure>
+            <figure class="shot"><div class="frame" style="--fill:#ffffff"><img src="images/devhub-discover.webp" width="1440" height="932" loading="lazy" alt="Discover what you can build section, showing a carousel of use cases starting with integrating data."><span class="hot" aria-hidden="true"></span></div><figcaption>Use cases from user research</figcaption></figure>
+            <figure class="shot"><div class="frame" style="--fill:#ffffff"><img src="images/devhub-build.webp" width="1440" height="1083" loading="lazy" alt="Build it your way section introducing Forge, with links to the Forge CLI, UI Kit, and tutorials."><span class="hot" aria-hidden="true"></span></div><figcaption>Building with Forge</figcaption></figure>
+            <figure class="shot"><div class="frame" style="--fill:#ffffff"><img src="images/devhub-studio.webp" width="1440" height="518" loading="lazy" alt="Create with Studio section, describing building apps and agents from natural language without code."><span class="hot" aria-hidden="true"></span></div><figcaption>Building with Studio</figcaption></figure>
+            <figure class="shot"><div class="frame" style="--fill:#ffffff"><img src="images/devhub-ai-tools.webp" width="1440" height="438" loading="lazy" alt="AI-powered developer tools section featuring Rovo Agents, Rovo Dev CLI, and Atlassian MCP Server."><span class="hot" aria-hidden="true"></span></div><figcaption>AI capabilities</figcaption></figure>
+            <figure class="shot"><div class="frame" style="--fill:#ffffff"><img src="images/devhub-makers.webp" width="1440" height="755" loading="lazy" alt="Meet the makers section with a developer case study quote about building an enterprise-grade Forge app."><span class="hot" aria-hidden="true"></span></div><figcaption>Developer case studies</figcaption></figure>
           </div>
         </article>
 
@@ -378,10 +378,10 @@ footer .wrap { padding-block: 20px; display: flex; justify-content: space-betwee
         <h2 id="about-h">Building bridges between complexity and clarity</h2>
       </div>
       <div class="about-text">
-        <p>I'm a senior technical writer and senior content designer with over 17 years of experience creating documentation, content systems and user experiences for technology companies.</p>
+        <p>I'm a senior technical writer and senior content designer with over 17 years of experience creating documentation, content systems, and user experiences for technology companies.</p>
         <p>My work sits at the intersection of technology and communication. I translate complex concepts into clear, actionable content that helps people succeed. From developer documentation to end-user guides, and from admin interfaces to customer-facing content, I craft experiences that respect both the technology and the people using it.</p>
-        <p>Most recently at Atlassian, I specialised in developer audiences, but my expertise spans all user types. I believe great documentation is more than accurate information. It's a thoughtfully designed experience that anticipates user needs, removes friction and builds confidence.</p>
-        <p>When I'm not writing documentation, I'm usually writing songs, enjoying the beach, or discovering new restaurants alongside my partner (the actual foodie). Music, movies, sports and crime shows round out my interests, best enjoyed with family and friends.</p>
+        <p>Most recently at Atlassian, I specialised in developer audiences, but my expertise spans all user types. I believe great documentation is more than accurate information. It's a thoughtfully designed experience that anticipates user needs, removes friction, and builds confidence.</p>
+        <p>When I'm not writing documentation, I'm usually writing songs, enjoying the beach, or discovering new restaurants alongside my partner (the actual foodie). Music, movies, sports, and crime shows round out my interests, best enjoyed with family and friends.</p>
       </div>
       <div class="expertise">
         <h3>Expertise</h3>
@@ -415,7 +415,7 @@ footer .wrap { padding-block: 20px; display: flex; justify-content: space-betwee
           <time datetime="2026-10-22">22 October 2026</time>
           <ul>
             <li>Moved the portfolio to its own hosted site with a refreshed design</li>
-            <li>Improved accessibility: semantic headings, descriptive image text, keyboard focus states and light and dark themes</li>
+            <li>Improved accessibility: semantic headings, descriptive image text, keyboard focus states, and light and dark themes</li>
             <li>Made the site discoverable in search engines</li>
           </ul>
         </li>
